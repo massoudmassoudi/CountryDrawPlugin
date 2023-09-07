@@ -12,13 +12,16 @@
     flex-direction: column;
     gap: 1em;
     font-family: 'Times New Roman', Times, serif;
-    color: blue;
+    color: rgb(168, 59, 59);
 
   }
   
   .leaflet-container {
     height: 90vh;
     width: 100%;
+
   }
+
+
   
   
