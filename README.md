@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Country Draw React Plugin
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React application allows you to draw shapes such as circles, rectangles, polylines, squares and polygons on a map using the Leaflet library. You can also export the drawn shapes as GeoJSON data.
 
-## Available Scripts
+## ⚡ Installation
 
-In the project directory, you can run:
+Follow these steps to set up and run the application:
 
-### `npm start`
+1. Clone this repository to your local machine.
+```bash
+   git clone https://github.com/massoudmassoudi/CountryDrawPlugin.git
+ ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Change into the project directory.
+```bash
+    cd CountryDrawPlugin
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. Install the project dependencies using npm or yarn. 
+```bash
+    npm install
+```
 
-### `npm test`
+4. Once you have installed the dependencies, you can run the application locally with the following command:
+```bash
+    npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This command will start the development server and open the application in your default web browser. You can access it at http://localhost:3000.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Draw circles, rectangles, and polygons on the map.
+Export the drawn shapes as GeoJSON data.
+Interactive mapping using Leaflet.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📙 Dependencies
 
-### `npm run eject`
+This project depends on the following libraries and resources:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React: A JavaScript library for building user interfaces.<br/>
+Leaflet: An open-source JavaScript library for creating interactive maps.<br/>
+react-leaflet-draw: A package for adding drawing and editing capabilities to Leaflet maps.<br/>
+leaflet-draw: The Leaflet Draw plugin for adding drawing functionality to Leaflet maps.<br/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🖥️ Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Open the application in your web browser. <br/>
+Use the drawing tools located in the bottom-right corner to create map features like circles, rectangles,polylines, squares and polygons.<br/>
+Once you've drawn the shapes you need, click the "Export to GeoJSON" button.<br/>
+This will generate GeoJSON data from your drawn shapes and provide a download link for the GeoJSON file.<br/>
+Enjoy using the application to create and export map features as GeoJSON data! 📄 <br/>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br/><br/>

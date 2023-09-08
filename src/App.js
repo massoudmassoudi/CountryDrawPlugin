@@ -7,8 +7,15 @@ import "leaflet/dist/leaflet.css";
 
 export default function App() {
   const featureGroupRef = useRef();
-  const [drawnLayers] = useState([]);
 
+  const [drawnLayers, setDrawnLayers] = useState([]);
+
+  // setting the drawn layer data 
+  const onCreated = (e) => {
+    setDrawnLayers([...drawnLayers, e.layer]);
+  };
+
+  // on click of exportGeo button , executing the below function
   const exportGeoJSON = () => {
     const geoJSONData = {
       type: "FeatureCollection",
@@ -33,19 +40,18 @@ export default function App() {
 
   return (
     <div className="map-container">
-      <MapContainer center={[21.5937, 80.9629]} zoom={5}>
+      <MapContainer center={[21.5937, 80.9629]} zoom={4}>
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <FeatureGroup ref={featureGroupRef}>
-          <EditControl position="bottomright"/>
+          <EditControl position="bottomright"  onCreated={onCreated} />
         </FeatureGroup>
       </MapContainer>
 
       <button className="export-button" onClick={exportGeoJSON}>
         Export to GeoJSON
       </button>
-    </div>
-  );
+ </div>
+);
 }
